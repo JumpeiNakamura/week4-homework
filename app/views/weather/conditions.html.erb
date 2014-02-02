@@ -1,0 +1,21 @@
+<h1>Current Weather Conditions for <%= @city %></h1>
+
+<h3>It is <%= @data["main"]["temp"] %> in <%= @city %></h3>
+
+<br>
+
+<div>
+  <h5>Max: <%= @data["main"]["temp_max"] %></h5>
+  <h5>Min: <%= @data["main"]["temp_min"] %></h5>
+</div>
+
+<br>
+
+<div>
+  <a href="/weather/search" class="btn btn-primary btn-md" role="button">Search different city &raquo;</a>
+</div>
+
+<!--
+<p>Raw JSON response:</p>
+<p><%= @json_data %></p>
+ -->
